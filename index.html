@@ -5,8 +5,10 @@
     <meta charset = "utf-8">
     <meta name=“viewport” content=“width=device-width, initial-scale=1”>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       .page-header {
-        margin: 20px;
         background: blue;
         height: 100px;
       }
@@ -20,11 +22,17 @@
         text-decoration: none;
         color: white;
       }
-      .view-bar {
+      nav {
+        float: left;
         height: 400px;
         width: 20%;
         background: red;
-        border: 5px;
+      }
+      article {
+        float: left;
+        height: 400px;
+        width: 80%;
+        background: green;
       }
     </style>
   </head>
@@ -38,16 +46,21 @@
           publishing tool
         </td>
         <td width="20%">
-          publishing tool
+          login
         </td>
       </tr>
     </table>
-    <aside class=“view-bar”>
-      <ul>
-        <li>
-          text
-        </li>
-      </ul>
-    </aside>
+    <section>
+      <nav>
+        <ul>
+          <li>
+            text
+          </li>
+        </ul>
+      </nav>
+      <article>
+        content
+      </article>
+    </section>
   </body>
 </html>
